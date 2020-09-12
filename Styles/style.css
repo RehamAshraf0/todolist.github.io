@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --primary-color: rgb(170, 111, 165);
+  --dark-color: rgb(105, 35, 90);
+}
+
+body {
+  font-family: "Grandstander", cursive;
+  background-image: linear-gradient(120deg, var(--primary-color), var(--dark-color));
+  min-height: 100vh;
+  color: white;
+}
+
+body header {
+  font-size: 2.2rem;
+}
+
+body header,
+body form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 20vh;
+}
+
+body form input {
+  min-width: 30%;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+body form button {
+  font-size: 2rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+body form button:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+}
+
+body form button i {
+  pointer-events: none;
+}
+
+body .todo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body ul {
+  list-style: none;
+  width: 30%;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+body .todo-div {
+  background-color: #fff;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+body .todo-div li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body .todo-div li,
+body .todo-div button {
+  padding: 0.5rem;
+  font-size: 1.6rem;
+  border: none;
+  margin: 0.5rem;
+}
+
+body .todo-div button {
+  background-color: var(--primary-color);
+  color: white;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+body .todo-div button:hover {
+  color: var(--primary-color);
+  background-color: white;
+}
+
+body .todo-div button i {
+  pointer-events: none;
+}
+
+body .completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+body .removed {
+  -webkit-transform: translateY(8rem) rotateZ(20deg);
+          transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0.5;
+}
+
+body form select {
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  margin: 0.3rem;
+  color: var(--primary-color);
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+}
+
+body form select option {
+  font-size: 1.2rem;
+}
+
+body .select {
+  position: relative;
+  width: 8rem;
+}
+
+body .select::after {
+  content: "\25BC";
+  position: absolute;
+  background-color: #b175a2;
+  top: 0.3rem;
+  right: -1.6rem;
+  padding: 0.6rem;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 650px) {
+  html {
+    font-size: 80%;
+  }
+  form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  form div {
+    min-height: 10vh;
+  }
+}
+
+@media (max-width: 485px) {
+  html {
+    font-size: 55%;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
